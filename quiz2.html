@@ -4,10 +4,23 @@
     <meta charset="utf-8">
     <title>第二問</title>
     <script>
-        
+       function quiz2(){
+         var answer = prompt("ヒント： なし　　(自分でがんばれ！)")
+         if(answer =='8471'){
+           alert("ナイス～")
+         location.href="quiz3.html"
+         sessionStorage.score++
+         }else{
+           alert("ブッブ～")
+           location.href="quiz3.html"
+         }
+       }
+      
     </script>
 </head>
 <body>
-   
+     <h1>第2問</h1>
+     <p>計算問題：　　(2983-2457)+6523+1422=??</p>
+     <button onclick="quiz2();">答えを入力</button>
 </body>
 </html>
