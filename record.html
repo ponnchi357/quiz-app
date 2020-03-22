@@ -4,10 +4,23 @@
     <meta charset="utf-8">
     <title></title>
     <script>
-        
-    </script>
-</head>
-<body>
-   
-</body>
-</html>
+        document.write("<h1>結果発表</h1>")
+        document.write("<h2>正解は"+sessionStorage.score+"問でした</h2>")
+        if(sessionStorage.score==3){
+           document.write("<p>全問正解！大変よくできました！</p>");
+        }else{
+          document.write("<p>もう一度練習して、全問正解を目指そう！</p>");
+         }
+         function tostart(){
+           location.href="quiz1.html"
+           sessionStorage.score=0;
+         }
+         
+      </script>
+  </head>
+  <body>
+      <button onclick="tostart;">もう一度する</button>
+  </body>
+  </html>
+  
+  
