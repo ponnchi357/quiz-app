@@ -2,12 +2,25 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>第三問</title>
     <script>
-        
-    </script>
-</head>
-<body>
-   
-</body>
-</html>
+        function quiz3(){
+          var answer = prompt("ヒント： なし　　(自分でがんばれ！)すべてひらがなで書いてね")
+          if(answer =='せかいいちおおきなおしりをしたひと'){
+            alert("すごい！正解だよ！")
+          location.href="record.html"
+          sessionStorage.score++
+          }else{
+            alert("残念！はずれ！")
+            location.href="record.html"
+          }
+        }   
+     </script>
+ </head>
+ <body>
+      <h1>第3問</h1>
+      <p>なぞなぞ：　　世界一大きなパンツをはいた人はだれ？</p>
+      <button onclick="quiz3();">答えを入力</button>    
+ </body>
+ </html>
+ 
